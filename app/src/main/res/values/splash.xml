@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <resources>
+        <style name="Base.Theme.SplashScreen." parent="Theme.SplashScreen">
+            <item name="windowSplashScreenBackground">@color/white</item>
+            <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+            <item name="postSplashScreenTheme">@style/Theme.MuslimMediaApp</item>
+        </style>
+    </resources>
+</resources>
