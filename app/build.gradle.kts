@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.AppLen.myapplication"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -27,15 +27,24 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
 dependencies {
+    // Add SplashScreen
+    implementation("androidx.core:core-splashscreen:1.0.1-alpha02")
+
+    // Add Picasso -> Image Loader
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    // Add Retrofit
+    implementation("com.squareup.retrofit2:retrofit2:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
