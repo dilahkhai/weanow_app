@@ -4,7 +4,7 @@
         <style name="Base.Theme.SplashScreen." parent="Theme.SplashScreen">
             <item name="windowSplashScreenBackground">@color/white</item>
             <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
-            <item name="postSplashScreenTheme">@style/Theme.MuslimMediaApp</item>
+            <item name="postSplashScreenTheme">@style/Theme.Weanow_app</item>
         </style>
     </resources>
 </resources>
