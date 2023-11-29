@@ -1,16 +1,19 @@
 package com.AppLen.myapplication
 
-import android.content.ContentValues.TAG
+import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.SearchView
 import com.AppLen.myapplication.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.Tag
+import java.util.Date
+import java.util.Locale
+import java.util.Objects
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,15 +23,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        fetchWeatherData()
+        fetchWeatherData("Jakarta")
+        SearchCity()
     }
 
-    private fun fetchWeatherData() {
+    private fun SearchCity() {
+        val searchView = binding.searchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                if (query != null) {
+                    fetchWeatherData(query)
+                }
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return true
+            }
+        })
+    }
+
+    private fun fetchWeatherData(cityName : String) {
         val retrofit = Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
             .baseUrl("https://api.openweathermap.org/data/2.5/")
             .build().create(ApiService::class.java)
-        val response = retrofit.getWeatherData("jakarta", "1ea61dd254b330833407fbab1e002412", "metric")
+        val response = retrofit.getWeatherData(cityName, "1ea61dd254b330833407fbab1e002412", "metric")
         response.enqueue(object : Callback<Weanow>{
             override fun onResponse(call: Call<Weanow>, response: Response<Weanow>) {
                 val responseBody = response.body()
@@ -42,7 +62,20 @@ class MainActivity : AppCompatActivity() {
                     val condition = responseBody.weather.firstOrNull()?.main?: "unknown"
                     val maxTemp = responseBody.main.temp_max
                     val minTemp = responseBody.main.temp_min
+
                     binding.temp.text = "$temperature °C"
+                    binding.weather.text = condition
+                    binding.maxTemp.text = "Max Temp: $maxTemp °C"
+                    binding.minTemp.text = "Max Temp: $minTemp °C"
+                    binding.humidity.text = "$humidity"
+                    binding.windSpeed.text = "$windSpeed"
+                    binding.sunRise.text = "$sunrise"
+                    binding.sunSet.text = "$sunset"
+                    binding.seaLevel.text = "$seaLevel hPa"
+                    binding.condition.text = condition
+                    binding.day.text =
+                        binding.date.text = date()
+                        binding.cityName.text = "$cityName"
 
 //                    Log.d(TAG, "onResponse: $temperature")
                 }
@@ -52,5 +85,15 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+    }
+
+    private fun date() : String {
+        val sdf = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+        return sdf.format((Date()))
+    }
+
+    fun dayName(timestamp: Long) : String {
+        val sdf = android.icu.text.SimpleDateFormat("EEEE", Locale.getDefault())
+        return sdf.format((Date()))
     }
 }

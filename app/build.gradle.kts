@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-parcelize") // Send bundle of data
 }
 
 android {
@@ -11,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.AppLen.myapplication"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -43,19 +42,16 @@ android {
 
 dependencies {
     // Add SplashScreen
-    implementation ("androidx.core:core-splashscreen:1.1.0-alpha02")
+    implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
 
     // Add Picasso -> Image Loader
     implementation("com.squareup.picasso:picasso:2.8")
-
-    // Add Moshi -> JSON Converter
-    implementation("com.squareup.moshi:moshi:1.14.0")
 
     // Add Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 
-    // Add lottie animation
+    // lottie animation
    implementation("com.airbnb.android:lottie:6.1.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
