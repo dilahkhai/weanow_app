@@ -19,5 +19,17 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="34dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dashboard_main"
+        android:orientation="vertical"
+        android:padding="500dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="109dp">
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
