@@ -3,7 +3,6 @@ package com.AppLen.myapplication
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.SearchView
 import com.AppLen.myapplication.databinding.ActivityMainBinding
 import retrofit2.Call
@@ -13,7 +12,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.util.Date
 import java.util.Locale
-import java.util.Objects
 
 class MainActivity : AppCompatActivity() {
 
@@ -78,6 +76,8 @@ class MainActivity : AppCompatActivity() {
                         binding.cityName.text = "$cityName"
 
 //                    Log.d(TAG, "onResponse: $temperature")
+
+                    changeImageAccordingToWeatherCondition(condition)
                 }
             }
 
@@ -85,6 +85,14 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+    }
+
+    private fun changeImageAccordingToWeatherCondition(conditions : String) {
+        when (conditions) {
+            "Haze" -> {
+                binding.root.setBackgroundResource(R )
+            }
+        }
     }
 
     private fun date() : String {
