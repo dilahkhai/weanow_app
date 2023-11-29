@@ -2,6 +2,7 @@ package com.AppLen.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.AppLen.myapplication.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -10,9 +11,13 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 //9a54f508c9d202d7fb2b9c06702c7406
 class MainActivity : AppCompatActivity() {
+
+    private var _binding: ActivityMainBinding? = null
+    private val binding get() = _binding as ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        _binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         fetchWeatherData()
     }
 
@@ -27,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 val responseBody = response.body()
                 if (response.isSuccessful && responseBody != null) {
                     val temperature = responseBody.main.temp.toString()
-                    binding
+
                 }
             }
 
