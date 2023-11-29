@@ -4,27 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/primaryColor">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view"
-        android:layout_width="match_parent"
+    <SearchView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginHorizontal="2dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039"/>
+        android:layout_marginStarrt="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:searchIcon="@drawable/search"
+        android:background="@drawable/search_view_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="418dp"
-        android:layout_height="633dp"
-        android:layout_marginTop="136dp"
-        app:cardCornerRadius="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_view"
-        app:layout_constraintVertical_bias="0.587"
-        tools:layout_editor_absoluteX="-4dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

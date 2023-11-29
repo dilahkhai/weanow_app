@@ -9,7 +9,6 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-//9a54f508c9d202d7fb2b9c06702c7406
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
