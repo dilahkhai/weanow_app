@@ -7,17 +7,6 @@
     tools:context=".MainActivity"
     android:background="@color/primaryColor">
 
-    <SearchView
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/search_view_shape"
-        android:searchIcon="@drawable/search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,6 +17,13 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="109dp">
 
+        <TextView
+            android:id="@+id/tv_kota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:textColor="@color/primaryColor" />
 
 
     </LinearLayout>
