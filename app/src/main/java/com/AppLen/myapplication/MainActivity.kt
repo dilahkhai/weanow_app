@@ -1,13 +1,16 @@
 package com.AppLen.myapplication
 
+import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.AppLen.myapplication.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.http.Tag
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +34,17 @@ class MainActivity : AppCompatActivity() {
                 val responseBody = response.body()
                 if (response.isSuccessful && responseBody != null) {
                     val temperature = responseBody.main.temp.toString()
+                    val humidity = responseBody.main.humidity
+                    val windSpeed = responseBody.wind.speed
+                    val sunrise = responseBody.sys.sunrise
+                    val sunset = responseBody.sys.sunset
+                    val seaLevel = responseBody.main.pressure
+                    val condition = responseBody.weather.firstOrNull()?.main?: "unknown"
+                    val maxTemp = responseBody.main.temp_max
+                    val minTemp = responseBody.main.temp_min
+                    binding.temp.text = "$temperature °C"
 
+//                    Log.d(TAG, "onResponse: $temperature")
                 }
             }
 
