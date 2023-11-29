@@ -24,7 +24,11 @@ class MainActivity : AppCompatActivity() {
         val response = retrofit.getWeatherData("jakarta", "1ea61dd254b330833407fbab1e002412", "metric")
         response.enqueue(object : Callback<Weanow>{
             override fun onResponse(call: Call<Weanow>, response: Response<Weanow>) {
-                TODO("Not yet implemented")
+                val responseBody = response.body()
+                if (response.isSuccessful && responseBody != null) {
+                    val temperature = responseBody.main.temp.toString()
+                    binding
+                }
             }
 
             override fun onFailure(call: Call<Weanow>, t: Throwable) {
