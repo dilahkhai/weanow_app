@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">Weanow App</string>
-    <string name="about_us">About Us</string>
-    <string name="search_hint">Find your city!</string>
 </resources>
