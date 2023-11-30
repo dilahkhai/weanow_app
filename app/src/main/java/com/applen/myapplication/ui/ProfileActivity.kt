@@ -2,7 +2,7 @@ package com.applen.myapplication.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.applen.myapplication.R
+import com.AppLen.myapplication.R
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
