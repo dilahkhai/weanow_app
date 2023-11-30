@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_info_weanow"
+        android:title="@string/inside_weanow"
+        android:icon="@drawable/logo_weanow"/>
+
+    <item
+        android:id="@+id/ic_info_applen"
+        android:title="@string/discover_applen"
+        android:icon="@drawable/logo_weanow"/>
+    <item
+        android:id="@+id/ic_info_us"
+        android:title="@string/trailblazers"
+        android:icon="@drawable/logo_weanow"/>
+
+
+</menu>
