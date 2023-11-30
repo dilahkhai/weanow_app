@@ -1,4 +1,4 @@
-package com.AppLen.myapplication
+package com.applen.myapplication
 
 data class Main(
     val feels_like: Double,
