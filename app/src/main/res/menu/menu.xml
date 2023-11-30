@@ -14,5 +14,4 @@
         android:title="@string/trailblazers"
         android:icon="@drawable/logo_weanow"/>
 
-
 </menu>
