@@ -1,4 +1,4 @@
-package com.applen.myapplication
+package com.applen.myapplication.ui
 
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.SearchView
 import com.AppLen.myapplication.R
 import com.AppLen.myapplication.databinding.ActivityMainBinding
-import com.applen.myapplication.model.network.Weanow
+import com.applen.myapplication.Weanow
 import com.applen.myapplication.model.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
@@ -92,22 +92,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
-            "Clear Sky", "Sunny", "Clear" -> {
+            "Rainy" -> {
                 binding.root.iv_weather.setImageSource(R.drawable.sunny)
             }
-
-            "Partly Clouds", "Clouds", "Overcast", "Mist", "Foggy" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.cloudy)
-            }
-
-            "Light Rain", "Drizzle", " Moderate Rain", "Showers", "Heavy Rain" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.rainy)
-            }
-
-            "Light Snow", "Moderate Snow", "Heavy Snow", "Blizzard" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.snow)
-            }
-
         }
     }
 
