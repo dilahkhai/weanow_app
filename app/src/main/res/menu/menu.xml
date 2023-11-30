@@ -3,16 +3,15 @@
     <item
         android:id="@+id/ic_info_weanow"
         android:title="@string/inside_weanow"
-        android:icon="@drawable/logo_weanow"/>
+        android:icon="@drawable/ic_weanow"/>
 
     <item
         android:id="@+id/ic_info_applen"
         android:title="@string/discover_applen"
-        android:icon="@drawable/logo_weanow"/>
+        android:icon="@drawable/ic_applen"/>
     <item
         android:id="@+id/ic_info_us"
         android:title="@string/trailblazers"
-        android:icon="@drawable/logo_weanow"/>
-
+        android:icon="@drawable/ic_us"/>
 
 </menu>
