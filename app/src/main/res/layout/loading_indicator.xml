@@ -17,6 +17,7 @@
         android:id="@+id/tv_loading_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@"
+        android:text="@string/getting_weather"
+        android:textColor="@color/dark_blue"
         android:textSize="18sp"/>
 </LinearLayout>
