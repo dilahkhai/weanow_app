@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Weanow App</string>
     <string name="find_your_city">find_your_city</string>
+    <string name="tv_content_profile">
+        About Weanow: Your Weather Companion
+        Welcome to Weanow, your trusted companion in navigating the ever-changing weather. Weanow is not just a weather app; its your personal meteorological advisor, crafted to simplify your daily decisions and ensure youre prepared for whatever the elements may bring.
+        \n\nOur Mission Empowering Your Day
+        At Weanow, our mission is simple – to empower you with accurate and reliable weather information so you can make informed decisions.\n\n
+        We understand that weather conditions impact various aspects of your life, from planning outdoor activities to ensuring a smooth commute. Thats why weve designed Weanow to be more than just a forecast; its your weather ally, always by your side.
+    </string>
+    <string name="content_image_logo">Content Image Logo</string>
+
 
     <string-array name="data_name">
         <item>Amelia Cahyani</item>
