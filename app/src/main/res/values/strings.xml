@@ -1,27 +1,4 @@
 <resources>
     <string name="app_name">Weanow App</string>
-    <string name="about_us">About Us</string>
-    <string name="search_hint">Find your city!</string>
-    <string name="profile_weanow">
-        About Weanow: Your Weather Companion\nWelcome to Weanow, your trusted companion in navigating the ever-changing weather.
-        Weanow is not just a weather app; it\'s your personal meteorological advisor,crafted to simplify your daily decisions and ensure you\'re prepared for whatever the elements may bring.
-        \n\nOur Mission: Empowering Your Day\nAt Weanow, our mission is simple – to empower you with accurate and reliable weather information so you can make informed decisions.
-        \n We understand that weather conditions impact various aspects of your life, from planning outdoor activities to ensuring a smooth commute. That\'s why we\'ve designed Weanow to be more than just a forecast; it\'s your weather ally, always by your side.
-        \n\nKey Features:
-        \n\u2022Real-Time Updates:
-        \nWeanow provides up-to-the-minute weather updates, ensuring you are never caught off guard by sudden changes.
-        \n\u2022 Customized Forecasts:
-        \nTailor your experience with personalized weather forecasts based on your location and preferences.
-        \nIntuitive Design:
-        \nOur user-friendly interface makes it easy to access the information you need, when you need it.\nSevere Weather Alerts: Stay informed about severe weather conditions with timely alerts, helping you stay safe and prepared.
-        \n\nWhy Weanow?
-        \n\u2022Accuracy:
-        \nOur forecasts are powered by cutting-edge meteorological technology, providing you with the most accurate predictions.
-        \n\u2022Reliability:
-        \nCount on Weanow for dependable weather information, no matter where you are.
-        \n\u2022Innovation: We are committed to staying ahead of the curve, continually enhancing Weanow to meet your evolving needs.
-        \n\nConnect with Us:
-        \nHave questions, suggestions, or just want to say hello? We'd love to hear from you! Connect with us on social media or drop us an email. Your feedback helps us improve and tailor Weanow to be the best weather app for you.
-        \nThank you for choosing Weanow as your weather companion. Here's to weathering every day with confidence!
-    </string>
+    <string name="find_your_city">find_your_city</string>
 </resources>
