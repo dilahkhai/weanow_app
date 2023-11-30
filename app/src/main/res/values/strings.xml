@@ -3,9 +3,4 @@
     <string name="find_your_city">find_your_city</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <string name="content_image_logo">Image Logo</string>
-    <string name="tv_title_profile">Profile</string>
-
-
 </resources>
