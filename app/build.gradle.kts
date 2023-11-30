@@ -41,9 +41,6 @@ android {
 }
 
 dependencies {
-    // Add SplashScreen
-    implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
-
     // Add Picasso -> Image Loader
     implementation("com.squareup.picasso:picasso:2.8")
 
@@ -61,4 +58,5 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
 }
