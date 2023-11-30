@@ -92,8 +92,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
-            "Rainy" -> {
+            "Clear Sky", "Sunny", "Clear" -> {
                 binding.root.iv_weather.setImageSource(R.drawable.sunny)
+            }
+
+            "Partly Clouds", "Clouds", "Overcast", "Mist", "Foggy" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.cloudy)
+            }
+
+            "Light Rain", "Drizzle", " Moderate Rain", "Showers", "Heavy Rain" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.rainy)
+            }
+
+            "Light Snow", "Moderate Snow", "Heavy Snow", "Blizzard" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.snow)
+            }
             }
         }
     }
