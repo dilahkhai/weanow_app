@@ -1,6 +1,7 @@
-package com.AppLen.myapplication
+package com.AppLen.myapplication.model.network
 
 
+import com.AppLen.myapplication.Weanow
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
