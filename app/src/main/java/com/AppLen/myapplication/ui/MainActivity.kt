@@ -92,8 +92,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
-            "Haze" -> {
-                binding.root.(R.drawable.)
+            "Rainy" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.sunny)
             }
         }
     }
