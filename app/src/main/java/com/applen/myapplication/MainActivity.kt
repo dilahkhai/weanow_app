@@ -1,4 +1,4 @@
-package com.applen.myapplication.ui
+package com.applen.myapplication
 
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity

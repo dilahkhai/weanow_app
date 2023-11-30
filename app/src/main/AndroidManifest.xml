@@ -15,15 +15,15 @@
         android:theme="@style/Theme.Weanow_app"
         tools:targetApi="31">
         <activity
+            android:name="com.applen.myapplication.MainActivity"
+            android:theme="@style/Base.Theme.Weanow_app"/>
+        <activity
+            android:name="com.applen.myapplication.ui.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.applen.myapplication.ui.SplashScreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainActivity"
             android:exported="true"
-            android:theme="@style/Base.Theme.Weanow_app">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
