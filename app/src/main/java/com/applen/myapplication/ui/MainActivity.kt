@@ -4,7 +4,6 @@ import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
-import com.AppLen.myapplication.databinding.ActivityMainBinding
 import com.applen.myapplication.R
 import com.applen.myapplication.Weanow
 import com.applen.myapplication.databinding.ActivityMainBinding
