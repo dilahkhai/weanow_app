@@ -8,23 +8,6 @@
     android:orientation="horizontal"
     android:background="@color/white">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primaryColor"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:layout_marginStart="15dp"
-            android:text="@string/tv_title_profile"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
-    </LinearLayout>
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_img_logo"
         android:layout_width="match_parent"
@@ -35,22 +18,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/content_image_logo"
+        android:contentDescription="@string/content_img_logo"
         android:src="@drawable/ic_splash"/>
     </androidx.cardview.widget.CardView>
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
