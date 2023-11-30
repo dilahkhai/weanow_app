@@ -8,6 +8,7 @@ import com.AppLen.myapplication.R
 import com.AppLen.myapplication.databinding.ActivityMainBinding
 import com.applen.myapplication.Weanow
 import com.applen.myapplication.model.network.ApiService
+import com.applen.myapplication.model.network.Weanow
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -92,8 +93,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
-            "Rainy" -> {
+            "Clear Sky", "Sunny", "Clear" -> {
                 binding.root.iv_weather.setImageSource(R.drawable.sunny)
+            }
+
+            "Partly Clouds", "Clouds", "Overcast", "Mist", "Foggy" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.cloudy)
+            }
+
+            "Light Rain", "Drizzle", " Moderate Rain", "Showers", "Heavy Rain" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.rainy)
+            }
+
+            "Light Snow", "Moderate Snow", "Heavy Snow", "Blizzard" -> {
+                binding.root.iv_weather.setImageSource(R.drawable.snow)
+            }
             }
         }
     }

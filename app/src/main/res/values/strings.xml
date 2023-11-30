@@ -9,6 +9,10 @@
         We understand that weather conditions impact various aspects of your life, from planning outdoor activities to ensuring a smooth commute. Thats why weve designed Weanow to be more than just a forecast; its your weather ally, always by your side.
     </string>
     <string name="content_image_logo">Content Image Logo</string>
+    <string name="discover_applen">Discover AppLen</string>
+    <string name="trailblazers">Trailblazers</string>
+    <string name="inside_weanow">Inside Weanow</string>
+    <string name="weanow_fg_tt">Weanow</string>
 
 
     <string-array name="data_name">
