@@ -7,25 +7,113 @@
     tools:context="ui.MainActivity"
     android:background="@color/primaryColor">
 
+    <include
+        android:id="@+id/loading_view"
+        layout="@layout/loading_indicator"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        tools:layout_editor_absoluteX="181dp" />
+
+    <TextView
+        android:id="@+id/tv_no_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="vertical"
-        android:padding="500dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="109dp">
+        android:padding="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" >
 
         <TextView
-            android:id="@+id/tv_kota"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:maxLines="1"
-            android:textColor="@color/primaryColor" />
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart=""
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_city_bg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_goneMarginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_cityName"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily=""
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily=""
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+
 
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="249dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_dashboard_main"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="209dp"
+            android:src="@drawable/sunny" />
+
+
+    </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
