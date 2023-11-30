@@ -1,10 +1,13 @@
-package com.AppLen.myapplication
+package com.AppLen.myapplication.ui
 
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
+import com.AppLen.myapplication.R
+import com.AppLen.myapplication.Weanow
 import com.AppLen.myapplication.databinding.ActivityMainBinding
+import com.AppLen.myapplication.model.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -61,19 +64,19 @@ class MainActivity : AppCompatActivity() {
                     val maxTemp = responseBody.main.temp_max
                     val minTemp = responseBody.main.temp_min
 
-                    binding.temp.text = "$temperature °C"
-                    binding.weather.text = condition
-                    binding.maxTemp.text = "Max Temp: $maxTemp °C"
-                    binding.minTemp.text = "Max Temp: $minTemp °C"
-                    binding.humidity.text = "$humidity"
-                    binding.windSpeed.text = "$windSpeed"
-                    binding.sunRise.text = "$sunrise"
-                    binding.sunSet.text = "$sunset"
-                    binding.seaLevel.text = "$seaLevel hPa"
-                    binding.condition.text = condition
-                    binding.day.text =
-                        binding.date.text = date()
-                        binding.cityName.text = "$cityName"
+                    binding.tv_temp.text = "$temperature °C"
+                    binding.tv_weather.text = condition
+                    binding.tv_maxTemp.text = "Max Temp: $maxTemp °C"
+                    binding.tv_minTemp.text = "Max Temp: $minTemp °C"
+                    binding.tv_humidity.text = "$humidity"
+                    binding.tvwindSpeed.text = "$windSpeed"
+                    binding.tv_sunRise.text = "$sunrise"
+                    binding.tv_sunSet.text = "$sunset"
+                    binding.tv_seaLevel.text = "$seaLevel hPa"
+                    binding.tv_condition.text = condition
+                    binding.tv_day.text =
+                        binding.tv_date.text = date()
+                        binding.tv_cityName.text = "$cityName"
 
 //                    Log.d(TAG, "onResponse: $temperature")
 
@@ -90,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
             "Haze" -> {
-                binding.root.setBackgroundResource(R )
+                binding.root.(R.drawable.)
             }
         }
     }
