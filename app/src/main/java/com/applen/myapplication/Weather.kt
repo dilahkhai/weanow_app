@@ -1,4 +1,4 @@
-package com.AppLen.myapplication
+package com.applen.myapplication
 
 data class Weather(
     val description: String,
