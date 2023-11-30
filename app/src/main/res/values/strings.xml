@@ -17,7 +17,30 @@
     </string-array>
 
     <string-array name="data_desc">
-        <item></item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id.</item>
     </string-array>
+
+    <string name="weanow_profile">About Weanow: Your Weather Companion\nWelcome to Weanow, your trusted companion in navigating the ever-changing weather. Weanow is not just a weather app; it\'s your personal meteorological advisor, crafted to simplify your daily decisions and ensure you're prepared for whatever the elements may bring.
+
+\nOur Mission: Empowering Your Day
+
+\nAt Weanow, our mission is simple – to empower you with accurate and reliable weather information so you can make informed decisions.
+
+\nWe understand that weather conditions impact various aspects of your life, from planning outdoor activities to ensuring a smooth commute. That\'s why we've designed Weanow to be more than just a forecast; it's your weather ally, always by your side.
+\nKey Features:
+\u2022Real-Time Updates: Weanow provides up-to-the-minute weather updates, ensuring you are never caught off guard by sudden changes.
+\u2022Customized Forecasts: Tailor your experience with personalized weather forecasts based on your location and preferences.
+\u2022Intuitive Design: Our user-friendly interface makes it easy to access the information you need, when you need it.
+\u2022Severe Weather Alerts: Stay informed about severe weather conditions with timely alerts, helping you stay safe and prepared.
+\nWhy Weanow?
+\u2022Accuracy: Our forecasts are powered by cutting-edge meteorological technology, providing you with the most accurate predictions.
+\u2022Reliability: Count on Weanow for dependable weather information, no matter where you are.
+\u2022Innovation: We are committed to staying ahead of the curve, continually enhancing Weanow to meet your evolving needs.
+\nConnect with Us:
+\n\nHave questions, suggestions, or just want to say hello? We'd love to hear from you! Connect with us on social media or drop us an email. Your feedback helps us improve and tailor Weanow to be the best weather app for you.
+\nThank you for choosing Weanow as your weather companion. Here's to weathering every day with confidence!</string>
+
 
 </resources>
