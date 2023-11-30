@@ -8,4 +8,16 @@
         <item>Syahida Nur Hilma Adilah</item>
         <item>Zaskia Zun Nurain</item>
     </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/amelia</item>
+        <item>@drawable/hanun</item>
+        <item>@drawable/zaskia</item>
+        <item>@drawable/dilah</item>
+    </string-array>
+
+    <string-array name="data_desc">
+        <item></item>
+    </string-array>
+
 </resources>
