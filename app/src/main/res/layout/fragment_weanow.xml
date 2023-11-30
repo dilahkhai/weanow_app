@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.WeanowFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="250dp"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_weanow_foto"
+            android:layout_width="150dp"
+            android:layout_marginTop="45dp"
+            android:src="@color/primaryColor"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_applen_title"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/weanow_fg_tt"
+            android:textSize="22sp"
+            android:textColor="@color/primaryColor"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
