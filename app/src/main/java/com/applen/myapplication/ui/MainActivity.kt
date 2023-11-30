@@ -1,13 +1,13 @@
-package com.AppLen.myapplication.ui
+package com.applen.myapplication.ui
 
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
 import com.AppLen.myapplication.R
-import com.AppLen.myapplication.Weanow
 import com.AppLen.myapplication.databinding.ActivityMainBinding
-import com.AppLen.myapplication.model.network.ApiService
+import com.applen.myapplication.Weanow
+import com.applen.myapplication.model.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
