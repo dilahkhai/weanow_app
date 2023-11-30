@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+package com.AppLen.myapplication
+=======
 package com.applen.myapplication
+>>>>>>> origin/main
 
 import org.junit.Test
 
