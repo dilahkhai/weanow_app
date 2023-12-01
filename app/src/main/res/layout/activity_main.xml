@@ -43,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" >
 
-    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/ll_city_bg"
@@ -63,12 +63,25 @@
             android:id="@+id/tv_cityName"
             android:layout_width="87dp"
             android:layout_height="21dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="Arial"
             android:textColor="@color/primaryColor"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal|center_vertical" />
+
+        <View
+            android:id="@+id/vector_13"
+            android:layout_width="136dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="116dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/line_city"
+            />
+
 
     </LinearLayout>
 
@@ -82,18 +95,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout4"
-        app:layout_goneMarginBottom="12dp">
+        app:layout_goneMarginBottom="12dp"
+        android:layout_marginTop="50dp">
 
         <TextView
             android:id="@+id/tv_day"
-            android:layout_width="88dp"
+            android:layout_width="84dp"
             android:layout_height="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="10dp"
             android:fontFamily=""
             android:gravity="start"
-            android:textColor="@color/primaryColor"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -101,12 +115,12 @@
             android:id="@+id/tv_date"
             android:layout_width="84dp"
             android:layout_height="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="10dp"
             android:fontFamily=""
             android:gravity="start"
-            android:textColor="@color/primaryColor"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -130,6 +144,7 @@
             android:src="@drawable/sunny" />
 
         <TextView
+            android:id="@+id/tv_temp"
             android:layout_width="130dp"
             android:layout_height="94dp"
             android:layout_marginStart="80dp"
@@ -139,31 +154,180 @@
             android:textSize="60sp" />
 
         <TextView
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="@color/black"
-            android:textSize="60sp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginEnd="2dp"/>
-
-        <TextView
+            android:id="@+id/tv_minTemp"
             android:layout_width="80dp"
             android:layout_height="20dp"
             android:layout_marginStart="63dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="250dp"
             android:layout_marginBottom="5dp"
             android:textColor="@color/black"
             android:textSize="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="110dp"
             />
 
-
+        <TextView
+            android:id="@+id/tv_maxTemp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="60dp"/>
 
     </androidx.cardview.widget.CardView>
 
 
+    <RelativeLayout
+        android:id="@+id/card_desc"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/loading_view"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+        <TextView
+            android:id="@+id/seaLevel"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_desc2"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/card_desc3"
+        app:layout_constraintStart_toEndOf="@+id/card_desc"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_desc3"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+        <TextView
+            android:id="@+id/windSpeed"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_desc4"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/card_desc"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_desc5"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/sunRise"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="4sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_desc6"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/card_desc"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/card_desc2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/sunSet"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="Arial"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="4sp" />
+    </RelativeLayout>
 
 
 
