@@ -23,6 +23,10 @@
     <string name="name">Name</string>
     <string name="description">Description</string>
     <string name="clas">class</string>
+    <string name="see_profile">See Profile</string>
+    <string name="discover_applen">Discover Applen</string>
+    <string name="trailblazers">Trailblazers</string>
+    <string name="inside_weanow">Inside Weanow</string>
 
     <string-array name="data_name">
         <item>Amelia Cahyani</item>
