@@ -30,6 +30,7 @@
             android:textStyle="bold"
             android:text="AppLen"
             android:textSize="22sp"
-            android:textColor="@color/primaryColor"/>
+            android:textColor="@color/primaryColor"
+            android:fontFamily="@font/arial_bold"/>
     </LinearLayout>
 </LinearLayout>
