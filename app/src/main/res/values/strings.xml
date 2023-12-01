@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Weanow App</string>
     <string name="find_your_city">find_your_city</string>
+
     <string name="tv_content_profile">
         \nAbout Weanow: Your Weather Companion\nWelcome to Weanow, your trusted companion in navigating the ever-changing weather. Weanow is not just a weather app; it\'s your personal meteorological advisor, crafted to simplify your daily decisions and ensure youre prepared for whatever the elements may bring.\n
         \nOur Mission: Empowering Your Day
@@ -20,6 +21,7 @@
         \nThank you for choosing Weanow as your weather companion. Here's to weathering every day with confidence!\n
     </string>
     <string name="content_image_logo">Content Image Logo</string>
+    <string name="getting_weather">Getting Weather...</string>
 
     <string-array name="data_name">
         <item>Amelia Cahyani</item>
