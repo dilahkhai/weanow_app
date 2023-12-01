@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.SearchView
 import com.AppLen.myapplication.R
 import com.AppLen.myapplication.databinding.ActivityMainBinding
-import com.applen.myapplication.Weanow
 import com.applen.myapplication.model.network.ApiService
 import com.applen.myapplication.model.network.Weanow
 import retrofit2.Call
@@ -65,19 +64,18 @@ class MainActivity : AppCompatActivity() {
                     val maxTemp = responseBody.main.temp_max
                     val minTemp = responseBody.main.temp_min
 
-                    binding.tv_temp.text = "$temperature °C"
-                    binding.tv_weather.text = condition
-                    binding.tv_maxTemp.text = "Max Temp: $maxTemp °C"
-                    binding.tv_minTemp.text = "Max Temp: $minTemp °C"
-                    binding.tv_humidity.text = "$humidity"
-                    binding.tvwindSpeed.text = "$windSpeed"
-                    binding.tv_sunRise.text = "$sunrise"
-                    binding.tv_sunSet.text = "$sunset"
-                    binding.tv_seaLevel.text = "$seaLevel hPa"
-                    binding.tv_condition.text = condition
-                    binding.tv_day.text =
-                        binding.tv_date.text = date()
-                        binding.tv_cityName.text = "$cityName"
+                    binding.tvTemp.text = "$temperature °C"
+                    binding.tvMaxTemp.text = "Max Temp: $maxTemp °C"
+                    binding.tvMinTemp.text = "Max Temp: $minTemp °C"
+                    binding.humidity.text = "$humidity"
+                    binding.windSpeed.text = "$windSpeed"
+                    binding.sunRise.text = "$sunrise"
+                    binding.sunSet.text = "$sunset"
+                    binding.seaLevel.text = "$seaLevel hPa"
+                    binding.condition.text = condition
+                    binding.tvDay.text = dayName(System.currentTimeMillis())
+                        binding.tvDate.text = date()
+                        binding.tvCityName.text = "$cityName"
 
 //                    Log.d(TAG, "onResponse: $temperature")
 
@@ -94,19 +92,19 @@ class MainActivity : AppCompatActivity() {
     private fun changeImageAccordingToWeatherCondition(conditions : String) {
         when (conditions) {
             "Clear Sky", "Sunny", "Clear" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.sunny)
+                binding.ivWeather.setImageResource(R.drawable.sunny)
             }
 
             "Partly Clouds", "Clouds", "Overcast", "Mist", "Foggy" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.cloudy)
+                binding.ivWeather.setImageResource(R.drawable.cloudy)
             }
 
             "Light Rain", "Drizzle", " Moderate Rain", "Showers", "Heavy Rain" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.rainy)
+                binding.ivWeather.setImageResource(R.drawable.rainy)
             }
 
             "Light Snow", "Moderate Snow", "Heavy Snow", "Blizzard" -> {
-                binding.root.iv_weather.setImageSource(R.drawable.snow)
+                binding.ivWeather.setImageResource(R.drawable.snow)
             }
             }
         }
@@ -121,4 +119,3 @@ class MainActivity : AppCompatActivity() {
         val sdf = android.icu.text.SimpleDateFormat("EEEE", Locale.getDefault())
         return sdf.format((Date()))
     }
-}
