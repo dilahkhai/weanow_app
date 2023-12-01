@@ -195,7 +195,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/seaLevel"
+            android:id="@+id/tv_seaLevel"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:textSize="4sp"
@@ -221,7 +221,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/humidity"
+            android:id="@+id/tv_humidity"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:textSize="4sp"
@@ -245,7 +245,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/windSpeed"
+            android:id="@+id/tv_windSpeed"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:textSize="4sp"
@@ -270,7 +270,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/condition"
+            android:id="@+id/tv_condition"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:textSize="4sp"
@@ -294,7 +294,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/sunRise"
+            android:id="@+id/tv_sunRise"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:layout_marginStart="8dp"
@@ -319,7 +319,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/sunSet"
+            android:id="@+id/tv_sunSet"
             android:layout_width="50dp"
             android:layout_height="15dp"
             android:layout_marginStart="8dp"
