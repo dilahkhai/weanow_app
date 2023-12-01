@@ -75,9 +75,9 @@ class MainActivity : AppCompatActivity() {
                     binding.tv_sunSet.text = "$sunset"
                     binding.tv_seaLevel.text = "$seaLevel hPa"
                     binding.tv_condition.text = condition
-                    binding.tv_day.text =
-                        binding.tv_date.text = date()
-                        binding.tv_cityName.text = "$cityName"
+                    binding.tv_day.text = dayName()
+                    binding.tv_date.text = date()
+                    binding.tv_cityName.text = "$cityName"
 
 //                    Log.d(TAG, "onResponse: $temperature")
 
