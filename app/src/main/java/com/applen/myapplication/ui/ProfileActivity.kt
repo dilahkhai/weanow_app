@@ -1,9 +1,7 @@
 package com.applen.myapplication.ui
 
-import android.animation.ValueAnimator
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.AppLen.myapplication.R
 import com.AppLen.myapplication.databinding.ActivityProfileBinding
@@ -11,9 +9,6 @@ import com.applen.myapplication.fragment.ApplenFragment
 import com.applen.myapplication.fragment.UsFragment
 import com.applen.myapplication.fragment.WeanowFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-
-
 
 
 class ProfileActivity : AppCompatActivity() {
