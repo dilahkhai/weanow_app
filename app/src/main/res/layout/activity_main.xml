@@ -183,8 +183,8 @@
 
     <RelativeLayout
         android:id="@+id/card_desc"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="100dp"
@@ -195,43 +195,20 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/seaLevel"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="Arial"
-            android:gravity="center_horizontal|center_vertical" />
-
-        <TextView
-            android:id="@+id/seaLevel_title"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
+            android:id="@+id/tv_seaLevel"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@android:color/transparent"
             android:fontFamily="Arial"
             android:gravity="center_horizontal|center_vertical" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:src="@drawable/sea"/>
-
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/card_desc2"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -244,23 +221,20 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/humidity"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
+            android:id="@+id/tv_humidity"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:fontFamily="Arial"
             android:gravity="center_horizontal|center_vertical" />
-
-
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/card_desc3"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_width="65dp"
+        android:layout_height="64.07dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="100dp"
@@ -271,13 +245,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/windSpeed"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
+            android:id="@+id/tv_windSpeed"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:fontFamily="Arial"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
@@ -285,7 +258,7 @@
     <RelativeLayout
         android:id="@+id/card_desc4"
         android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_height="75dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="5dp"
@@ -297,13 +270,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
         <TextView
-            android:id="@+id/condition"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
+            android:id="@+id/tv_condition"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:textSize="4sp"
+            android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:fontFamily="Arial"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
@@ -311,7 +283,7 @@
     <RelativeLayout
         android:id="@+id/card_desc5"
         android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_height="75dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="5dp"
@@ -322,40 +294,39 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/sunRise"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
+            android:id="@+id/tv_sunRise"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Arial"
-            android:gravity="center_horizontal|center_vertical" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="4sp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/card_desc6"
         android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/card_desc"
         android:clipToOutline="true"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/card_desc"
+        app:layout_constraintStart_toEndOf="@+id/card_desc2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/sunSet"
-            android:layout_width="70dp"
-            android:layout_height="17dp"
-            android:textSize="3sp"
-            android:layout_marginTop="45dp"
+            android:id="@+id/tv_sunSet"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="Arial"
-            android:gravity="center_horizontal|center_vertical" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="4sp" />
     </RelativeLayout>
 
 
