@@ -33,9 +33,10 @@
         android:layout_height="630dp"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/ll_city_bg"
@@ -193,6 +194,7 @@
 
         <ImageView
             android:id="@+id/sea_img"
+            android:src="@drawable/sea"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
@@ -238,6 +240,7 @@
 
         <ImageView
             android:id="@+id/himidity_img"
+            android:src="@drawable/humidity"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
@@ -279,6 +282,7 @@
 
         <ImageView
             android:id="@+id/wind_img"
+            android:src="@drawable/wind_speed"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
@@ -320,6 +324,7 @@
 
         <ImageView
             android:id="@+id/conditions_img"
+            android:src="@drawable/condition"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
@@ -362,6 +367,7 @@
 
         <ImageView
             android:id="@+id/sunset_img"
+            android:src="@drawable/sunset"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
@@ -404,6 +410,7 @@
 
         <ImageView
             android:id="@+id/sunrise_img"
+            android:src="@drawable/sunrise"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
