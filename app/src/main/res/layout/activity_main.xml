@@ -16,27 +16,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:background="@color/white"
         android:layout_margin="30dp"
-        app:layout_constraintBottom_toTopOf="@id/linearLayout4"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="800dp"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="vertical"
+        android:layout_marginTop="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchView">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="84dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/arial_bold"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_city_bg"
@@ -92,8 +109,9 @@
             android:id="@+id/tv_day"
             android:layout_width="84dp"
             android:layout_height="20dp"
-            android:layout_marginTop="38dp"
+            android:layout_marginTop="35dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginStart="102dp"
             android:layout_marginRight="10dp"
             android:fontFamily="@font/arial_bold"
             android:gravity="start"
@@ -101,25 +119,14 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_date"
-            android:layout_width="84dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="@font/arial_bold"
-            android:gravity="start"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/linearLayout"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="90dp"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="horizontal"
         android:padding="15dp"
@@ -152,9 +159,17 @@
             android:layout_marginTop="250dp"
             android:layout_marginBottom="5dp"
             android:textColor="@color/black"
+            android:text="@string/min"
             android:textSize="60sp"
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="110dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/vector_suhu"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="230dp"/>
 
         <TextView
             android:id="@+id/tv_maxTemp"
@@ -163,6 +178,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="250dp"
             android:layout_marginBottom="5dp"
+            android:text="@string/max"
             android:textColor="@color/black"
             android:textSize="60sp"
             android:layout_gravity="center_horizontal"
