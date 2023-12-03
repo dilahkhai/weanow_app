@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity"
+    tools:context="com.applen.myapplication.ui.MainActivity"
     android:background="@color/primaryColor">
 
     <include
@@ -30,10 +30,9 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="630dp"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="vertical"
-        android:padding="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -154,8 +153,7 @@
             android:textColor="@color/black"
             android:textSize="60sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="110dp"
-            />
+            android:layout_marginEnd="110dp" />
 
         <TextView
             android:id="@+id/tv_maxTemp"
@@ -169,7 +167,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="60dp"/>
     </androidx.cardview.widget.CardView>
-
 
     <RelativeLayout
         android:id="@+id/card_desc"

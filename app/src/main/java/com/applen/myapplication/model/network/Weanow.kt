@@ -30,7 +30,6 @@ data class Sys(
     val type: Int
 )
 
-
 data class Main(
     val humidity: Int,
     val pressure: Int,
