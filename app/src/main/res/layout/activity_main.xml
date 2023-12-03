@@ -33,9 +33,9 @@
         android:layout_height="630dp"
         android:background="@drawable/bg_dashboard_main"
         android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/ll_city_bg"
@@ -177,9 +177,9 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/card_desc"
         android:clipToOutline="true"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toStartOf="@+id/loading_view"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout4">
 
         <TextView
             android:id="@+id/tv_seaLevel"
@@ -223,13 +223,12 @@
         android:layout_width="65dp"
         android:layout_height="64.07dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/card_desc"
         android:clipToOutline="true"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4">
 
         <TextView
             android:id="@+id/tv_windSpeed"
