@@ -1,6 +1,5 @@
-package com.applen.myapplication
+package com.applen.myapplication.model.network
 
-import com.applen.myapplication.model.network.ApiService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
