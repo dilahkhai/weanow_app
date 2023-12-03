@@ -171,7 +171,7 @@
     <RelativeLayout
         android:id="@+id/card_desc"
         android:layout_width="65dp"
-        android:layout_height="64.07dp"
+        android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="100dp"
@@ -195,7 +195,7 @@
     <RelativeLayout
         android:id="@+id/card_desc2"
         android:layout_width="65dp"
-        android:layout_height="64.07dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -221,7 +221,7 @@
     <RelativeLayout
         android:id="@+id/card_desc3"
         android:layout_width="65dp"
-        android:layout_height="64.07dp"
+        android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/card_desc"
@@ -243,7 +243,7 @@
 
     <RelativeLayout
         android:id="@+id/card_desc4"
-        android:layout_width="68dp"
+        android:layout_width="65dp"
         android:layout_height="75dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="100dp"
@@ -268,7 +268,7 @@
 
     <RelativeLayout
         android:id="@+id/card_desc5"
-        android:layout_width="68dp"
+        android:layout_width="65dp"
         android:layout_height="75dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="100dp"
@@ -284,16 +284,16 @@
             android:id="@+id/tv_sunRise"
             android:layout_width="50dp"
             android:layout_height="15dp"
-            android:layout_marginStart="8dp"
+            android:textSize="4sp"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
             android:fontFamily="@font/arial_bold"
-            android:gravity="center_horizontal|center_vertical"
-            android:textSize="4sp" />
+            android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/card_desc6"
-        android:layout_width="68dp"
+        android:layout_width="65dp"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
@@ -309,10 +309,10 @@
             android:id="@+id/tv_sunSet"
             android:layout_width="50dp"
             android:layout_height="15dp"
-            android:layout_marginStart="8dp"
+            android:textSize="4sp"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
             android:fontFamily="@font/arial_bold"
-            android:gravity="center_horizontal|center_vertical"
-            android:textSize="4sp" />
+            android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
