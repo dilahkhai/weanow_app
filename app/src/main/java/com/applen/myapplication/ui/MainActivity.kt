@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import com.applen.myapplication.R
 import com.applen.myapplication.databinding.ActivityMainBinding
+import com.applen.myapplication.model.network.ApiConfig.fetchWeatherData
 import com.applen.myapplication.model.network.ApiService
 import com.applen.myapplication.model.network.Weanow
 import retrofit2.Call
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        fetchWeatherData("Jakarta")
+        fetchWeatherData()
         SearchCity()
 
         val fabProfileGroup: View = binding.fabProfileGroup
