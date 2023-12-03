@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv_hero"
-    android:layout_width="300dp"
+    android:layout_width="280dp"
     android:layout_height="150dp"
     android:layout_gravity="center"
     android:layout_marginStart="8dp"
@@ -13,11 +13,9 @@
     card_view:cardCornerRadius="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
-        tools:ignore="ExtraText">
+        android:padding="8dp">
 
         <ImageView
             android:id="@+id/iv_student"
@@ -26,7 +24,7 @@
             android:scaleType="centerCrop"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars"/>
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -35,12 +33,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@id/iv_student"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toEndOf="@id/iv_student"
-            card_view:layout_constraintTop_toTopOf="@id/iv_student"
             android:text="@string/name"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/iv_student"
+            card_view:layout_constraintTop_toTopOf="@id/iv_student" />
 
         <TextView
             android:id="@+id/tv_class"
@@ -55,13 +53,14 @@
             card_view:layout_constraintVertical_bias="0.0" />
 
         <TextView
+            android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:text="@string/description"
-            card_view:layout_constraintTop_toBottomOf="@+id/tv_class"
             card_view:layout_constraintEnd_toEndOf="@id/tv_class"
-            card_view:layout_constraintStart_toStartOf="@id/tv_class"/>
+            card_view:layout_constraintStart_toStartOf="@id/tv_class"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_class" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
