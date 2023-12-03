@@ -1,6 +1,8 @@
 package com.applen.myapplication.ui
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.AppLen.myapplication.R
@@ -12,14 +14,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class ProfileActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityProfileBinding
-
+    private var _binding: ActivityProfileBinding? = null
+    private val binding get() = _binding as ActivityProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
+        _binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val profileGroup  = R.id.fab_profile_group
+        val fab: View = binding.fabProfileGroup
+        fab.setOnClickListener { view ->
+            val intent = Intent(this@ProfileActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         val weanowFragment= WeanowFragment()
         val applenFragment = ApplenFragment()
