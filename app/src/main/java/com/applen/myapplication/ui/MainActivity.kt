@@ -4,8 +4,8 @@ import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.SearchView
-import com.applen.myapplication.R
-import com.applen.myapplication.databinding.ActivityMainBinding
+import com.AppLen.myapplication.R
+import com.AppLen.myapplication.databinding.ActivityMainBinding
 import com.applen.myapplication.model.network.ApiService
 import com.applen.myapplication.model.network.Weanow
 import retrofit2.Call
