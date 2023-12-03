@@ -29,6 +29,14 @@
     <string name="inside_weanow">Inside Weanow</string>
     <string name="meet_our_team">Meet Our Team</string>
     <string name="getting_weather">getting_weather</string>
+    <string name="sea">SEA</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">wind Speed</string>
+    <string name="conditions">Conditions</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="min">Min:</string>
+    <string name="max">Max:</string>
 
     <string-array name="data_name">
         <item>Amelia Cahyani</item>
