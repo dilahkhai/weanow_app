@@ -169,6 +169,8 @@
             android:layout_marginEnd="60dp"/>
     </androidx.cardview.widget.CardView>
 
+
+
     <RelativeLayout
         android:id="@+id/card_desc"
         android:layout_width="65dp"
