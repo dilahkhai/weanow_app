@@ -15,10 +15,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintTop_toTopOf="parent" />
     
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="350dp"
         android:layout_height="40dp"
@@ -27,8 +26,6 @@
         app:layout_constraintBottom_toTopOf="@id/linearLayout4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -39,10 +36,7 @@
         android:padding="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
     <LinearLayout
         android:id="@+id/ll_city_bg"
@@ -63,7 +57,7 @@
             android:layout_width="87dp"
             android:layout_height="21dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:textColor="@color/primaryColor"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -78,10 +72,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="9dp"
             android:layout_marginStart="30dp"
-            android:background="@drawable/line_city"
-            />
-
-
+            android:background="@drawable/line_city" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,7 +95,7 @@
             android:layout_marginTop="38dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="10dp"
-            android:fontFamily=""
+            android:fontFamily="@font/arial_bold"
             android:gravity="start"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -117,7 +108,7 @@
             android:layout_marginTop="38dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="10dp"
-            android:fontFamily=""
+            android:fontFamily="@font/arial_bold"
             android:gravity="start"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -177,7 +168,6 @@
             android:textSize="60sp"
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="60dp"/>
-
     </androidx.cardview.widget.CardView>
 
 
@@ -201,7 +191,7 @@
             android:textSize="4sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 
@@ -227,7 +217,7 @@
             android:textSize="4sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 
@@ -251,7 +241,7 @@
             android:textSize="4sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 
@@ -276,7 +266,7 @@
             android:textSize="4sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="8dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
 
@@ -300,7 +290,7 @@
             android:layout_height="15dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical"
             android:textSize="4sp" />
     </RelativeLayout>
@@ -325,7 +315,7 @@
             android:layout_height="15dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="Arial"
+            android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical"
             android:textSize="4sp" />
     </RelativeLayout>
