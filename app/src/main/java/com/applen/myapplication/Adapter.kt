@@ -3,7 +3,7 @@ package com.applen.myapplication
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.AppLen.myapplication.databinding.ItemRowBinding
+import com.applen.myapplication.databinding.ItemRowBinding
 
 class Adapter(private val listUs: ArrayList<Item>): RecyclerView.Adapter<Adapter.ListViewHolder>() {
     class ListViewHolder(var binding: ItemRowBinding) : RecyclerView.ViewHolder(binding.root) {
