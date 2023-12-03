@@ -3,7 +3,7 @@ package com.applen.myapplication.ui
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import com.applen.myapplication.R
 import com.applen.myapplication.databinding.ActivityMainBinding
 import com.applen.myapplication.model.network.ApiService
