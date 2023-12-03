@@ -1,8 +1,10 @@
 package com.applen.myapplication.ui
 
+import android.content.Intent
 import android.icu.text.SimpleDateFormat
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import com.applen.myapplication.R
 import com.applen.myapplication.databinding.ActivityMainBinding
@@ -26,7 +28,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         fetchWeatherData("Jakarta")
         SearchCity()
+
+        val fabProfileGroup: View = binding.fabProfileGroup
+        fabProfileGroup.setOnClickListener { view ->
+            val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
+
+
 
     private fun SearchCity() {
         val searchView = binding.searchView

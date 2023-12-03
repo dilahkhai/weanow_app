@@ -21,7 +21,7 @@ class ProfileActivity : AppCompatActivity() {
         _binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val fab: View = binding.fabProfileGroup
+        val fab: View = binding.fabHome
         fab.setOnClickListener { view ->
             val intent = Intent(this@ProfileActivity, MainActivity::class.java)
             startActivity(intent)
