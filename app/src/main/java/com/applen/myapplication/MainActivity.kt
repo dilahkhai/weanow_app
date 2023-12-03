@@ -67,12 +67,12 @@ class MainActivity : AppCompatActivity() {
                     binding.tvTemp.text = "$temperature °C"
                     binding.tvMaxTemp.text = "Max Temp: $maxTemp °C"
                     binding.tvMinTemp.text = "Max Temp: $minTemp °C"
-                    binding.humidity.text = "$humidity"
-                    binding.windSpeed.text = "$windSpeed"
-                    binding.sunRise.text = "$sunrise"
-                    binding.sunSet.text = "$sunset"
-                    binding.seaLevel.text = "$seaLevel hPa"
-                    binding.condition.text = condition
+                    binding.tvHumidity.text = "$humidity"
+                    binding.tvWindSpeed.text = "$windSpeed"
+                    binding.tvSunRise.text = "$sunrise"
+                    binding.tvSunSet.text = "$sunset"
+                    binding.tvSeaLevel.text = "$seaLevel hPa"
+                    binding.tvCondition.text = condition
                     binding.tvDay.text = dayName(System.currentTimeMillis())
                         binding.tvDate.text = date()
                         binding.tvCityName.text = "$cityName"
@@ -119,4 +119,3 @@ class MainActivity : AppCompatActivity() {
         val sdf = android.icu.text.SimpleDateFormat("EEEE", Locale.getDefault())
         return sdf.format((Date()))
     }
-}
