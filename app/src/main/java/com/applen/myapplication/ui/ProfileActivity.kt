@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.applen.myapplication.R
-import com.applen.myapplication.databinding.ActivityProfileBinding
+import com.AppLen.myapplication.R
+import com.AppLen.myapplication.databinding.ActivityProfileBinding
 import com.applen.myapplication.fragment.ApplenFragment
 import com.applen.myapplication.fragment.UsFragment
 import com.applen.myapplication.fragment.WeanowFragment
