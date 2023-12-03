@@ -17,14 +17,15 @@
         android:layout_height="match_parent"
         android:padding="8dp">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_student"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="centerCrop"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            card_view:shapeAppearanceOverlay="@style/RoundedSquare"/>
 
         <TextView
             android:id="@+id/tv_name"

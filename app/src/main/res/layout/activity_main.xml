@@ -310,4 +310,19 @@
             android:fontFamily="@font/arial_bold"
             android:gravity="center_horizontal|center_vertical" />
     </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_profile_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/primaryColor"
+        app:tint="@color/white"
+        app:fabSize="normal"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
