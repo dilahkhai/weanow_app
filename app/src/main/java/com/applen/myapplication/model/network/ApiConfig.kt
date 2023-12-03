@@ -27,4 +27,5 @@ object ApiConfig {
             .create(ApiService::class.java)
 
     }
+
 }
