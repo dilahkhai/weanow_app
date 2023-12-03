@@ -2,7 +2,7 @@ package com.applen.myapplication.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.AppLen.myapplication.R
+import com.applen.myapplication.R
 
 class SearchAbleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
