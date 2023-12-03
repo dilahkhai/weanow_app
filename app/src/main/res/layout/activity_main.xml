@@ -300,7 +300,7 @@
 
         <ImageView
             android:id="@+id/wind_img"
-            android:src="@drawable/wind_speed"
+            android:src="@drawable/wind"
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:layout_marginStart="13dp"
